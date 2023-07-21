@@ -17,7 +17,7 @@ Change "binpath =" in the snakemake files (./DILS/bin/) e.g. ./DILS/bin/Snakefil
 Currently I used the lightMode, but I should probably switch to the normal mode to really benefit from the HTC cluster.<br><br>
 Use my modified version of the R scripts that require the abcrf function (e.g. model_comp_2pop_allModels.R, for details, see discussion in https://groups.google.com/g/dils---demographic-inferences-with-linked-selection/c/Qcu3rqvPXWc )<br>
 
-## Generate the input files for DILS
+## Generate the input files for DILS (see ./generate_inputfiles/)
 The script script_generate_inputfiles_DILS.sh helps to generate the input files for DILS on my own data. The script will select a given number of genomic regions and then change the header in order to obtain the following format (>locusID|pop|ind|Allele1). Note that here, the sequences data only contain Allele1 since the individuals are haploid. Thanks to this script, a directory is created, containing the sequence data, the yaml and json files, as well as the script to run DILS (script_lanceur_DILS.sh, see above). The script is just provided as an example on my own data! <br>
 For my own work, only the first lines of the script should be modified: <br>
 Species1=$(echo "Mellifera") #Define the Species1 <br>
