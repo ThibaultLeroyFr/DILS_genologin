@@ -14,4 +14,5 @@ sbatch script_lanceur_DILS_test.sh<br>
 Take care of all the dependencies regarding python2 and R !! All succesfull work on the R version R-3.5.2, but I tried many others without success. <br>
 Change "binpath =" in the snakemake files (./bin/) e.g. ./bin/Snakefile_2pop <br>
 Currently I used the lightMode, but I should probably switch to the normal mode to really benefit from the HTC cluster.<br>
-Use my modified version of model_comp_2pop_allModels.R (due to an error in abcrf: see discussion in https://groups.google.com/g/dils---demographic-inferences-with-linked-selection/c/Qcu3rqvPXWc )<br>
+Use my modified version of the R scripts using abcrf (e.g. model_comp_2pop_allModels.R, due to an error in abcrf: see discussion in https://groups.google.com/g/dils---demographic-inferences-with-linked-selection/c/Qcu3rqvPXWc )<br>
+
