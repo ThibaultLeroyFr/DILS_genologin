@@ -20,8 +20,8 @@ Use my modified version of the R scripts that require the abcrf function (e.g. m
 ## Generate the input files for DILS (see ./generate_inputfiles/)
 The script script_generate_inputfiles_DILS.sh helps to generate the input files for DILS on my own data. The script will select a given number of genomic regions and then change the header in order to obtain the following format (>locusID|pop|ind|Allele1). Note that here, the sequences data only contain Allele1 since the individuals are haploid. Thanks to this script, a directory is created, containing the sequence data, the yaml and json files, as well as the script to run DILS (script_lanceur_DILS.sh, see above). The script is just provided as an example on my own data! <br>
 For my own work, only the first lines of the script should be modified: <br>
-Species1=$(echo "Mellifera") #Define the Species1 <br>
-Species2=$(echo "Ligustica") #Define the Species2 <br>
+Species1=$(echo "Species1") #Define the name of the species1 <br>
+Species2=$(echo "Species2") #Define the name of the species2 <br>
 nbloci=$(echo "200" | bc) # Define the number of loci to randomly select <br>
 constant_or_variable_Ne_through_time=$(echo "constant") #Define if DILS should run simulations assuming constant or variable Ne through time (constant/variable) <br>
  use_the_SFS=$(echo "no") # Define if DILS should consider the site frequency spectrum (yes/no) <br> <br>
