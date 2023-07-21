@@ -125,7 +125,7 @@ fi
 echo "modeBarrier: bimodal" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml
 echo "max_N_tolerated: 0.5" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml
 echo "Lmin: 1000" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml
-echo "nMin: 10" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml
+echo "nMin: 7" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml #this corresponds to the number of individuals considering diploids (so 14 haploid sequences, here the minimum number of individuals in the dataset is 16 haploid)
 echo "mu: 0.0000000034" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml # the mutation rate by default is 0.00000002763, here adjusted for honeybee based on https://pubmed.ncbi.nlm.nih.gov/28007973/ & https://www.nature.com/articles/nature14649
 echo "rho_over_theta: 0.5" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml
 echo "N_min: 0" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml
