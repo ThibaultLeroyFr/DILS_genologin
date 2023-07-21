@@ -2,10 +2,11 @@
 For details regarding DILS, please see: <br>
 https://github.com/popgenomics/DILS<br>
 
-Here, the repository explains how to use the software DILS on the genologin computing cluster (genotoul)<br>
+Here, the repository only explains how to use the software DILS on the genologin computing cluster (genotoul)<br>
 
-## Launch DILS on the example dataset (https://github.com/popgenomics/DILS/tree/master/example)
-The script_lanceur_DILS_test.sh is used to launch the script on the cluster.<br>
+## Launch DILS on the example dataset
+Data from the example dataset: https://github.com/popgenomics/DILS/tree/master/example <br>
+The script_lanceur_DILS_test.sh is used to launch the script on the genologin cluster.<br>
 Edit the path in the bidon.yaml to the data and where the DILS scripts are on the cluster.<br><br>
 Then launch the computation:<br>
 sbatch script_lanceur_DILS_test.sh<br>
