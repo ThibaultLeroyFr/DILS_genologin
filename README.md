@@ -6,7 +6,7 @@ Here, the repository explains how to use the software DILS on the genologin comp
 
 ## Launch DILS on the test dataset
 The script_lanceur_DILS_test.sh is used to launch the script on the cluster.<br>
-Edit the path in the bidon.yaml to the data and where the DILS scripts are on the cluster.<br>
+Edit the path in the bidon.yaml to the data and where the DILS scripts are on the cluster.<br><br>
 Then launch the computation:<br>
 sbatch script_lanceur_DILS_test.sh<br>
 
