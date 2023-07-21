@@ -112,7 +112,7 @@ elif [ "$use_the_SFS" == "yes" ]; then
 else
 	echo "Please revise the script in order to indicate if the SFS should be used or not in the summary statistics!!!"
 fi
-echo "config_yaml: $new_rootdir/"$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml
+echo "config_yaml: $new_rootdir/$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup/"$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml
 echo "timeStamp: resDILS_"$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml
 echo "population_growth: $constant_or_variable_Ne_through_time" >> "$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml
 if [ "$constant_or_variable_Ne_through_time" == "constant" ]; then
