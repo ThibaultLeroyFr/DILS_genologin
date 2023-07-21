@@ -142,6 +142,6 @@ mv cluster_test.json cluster.json
 # cp script_lanceur_DILS.sh in the directory
 cp $rootdir/script_lanceur_DILS.sh .
 my_new_yaml_file=$(echo "$new_rootdir"/"$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup/"$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup.yaml)
-my_new_json_file=$(echo ""$new_rootdir"/"$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup/cluster_test.json")
+my_new_json_file=$(echo ""$new_rootdir"/"$Species1"_"$Species2"_"$constant_or_variable_Ne_through_time"Ne_"$use_the_SFS"SFS_nooutgroup/cluster.json")
 sed "s;/work/genphyse/cytogen/Thibault/SeqApiPop_completevcf/Demo_DILS_tests/bidon.yaml;$my_new_yaml_file;g" script_lanceur_DILS.sh | sed "s;/work/genphyse/cytogen/Thibault/SeqApiPop_completevcf/Demo_DILS_tests/cluster_test.json;$my_new_json_file;g" > script_lanceur_DILS.tmp
 mv script_lanceur_DILS.tmp script_lanceur_DILS.sh
