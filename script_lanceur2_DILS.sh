@@ -4,7 +4,7 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks=2
 #SBATCH --mem-per-cpu=30G
-#SBATCH -p unlimitq
+#SBATCH --exclude=node129
 
 module load bioinfo/snakemake-7.8.1
 module load system/pypy2.7-v7.3.12
