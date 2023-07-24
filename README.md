@@ -17,6 +17,13 @@ Change "binpath =" in the snakemake files (./DILS/bin/) e.g. ./DILS/bin/Snakefil
 Currently I used the lightMode, but I should probably switch to the normal mode to really benefit from the HTC cluster.<br><br>
 Use my modified version of the R scripts that require the abcrf function (e.g. model_comp_2pop_allModels.R, for details, see discussion in https://groups.google.com/g/dils---demographic-inferences-with-linked-selection/c/Qcu3rqvPXWc )<br>
 
+## Exclude some specific nodes (slurm)
+To exclude nodes that lead to jobs stuck running on these nodes (e.g. node129 recently), it is possible to use the function: <br>
+"#SBATCH --exclude=node129" <br>
+To exclude more nodes:<br>
+"#SBATCH --exclude=node127,node128,node129,node130,node131,node132,node133,node134,node135,node136" or directly "#SBATCH --exclude=node[127-136]"<br>
+But this also requires to adjust the script that launch the snakemake and the associated json file (see script_lanceur2_DILS.sh & cluster2.json) <br>
+
 ## Generate the input files for DILS (see ./generate_inputfiles/)
 The script script_generate_inputfiles_DILS.sh helps to generate the input files for DILS on my own data. The script will select a given number of genomic regions and then change the header in order to obtain the following format (>locusID|pop|ind|Allele1). Note that here, the sequences data only contain Allele1 since the individuals are haploid (note that there is no problem to use haploid data in DILS, see Fraïsse et al. 2021). Thanks to this script, a directory is created, containing the sequence data, the yaml and json files, as well as the script to run DILS (script_lanceur_DILS.sh, see above). The script is just provided as an example on my own data! <br><br>
 For my own work, only the first lines of the script should be modified: <br>
