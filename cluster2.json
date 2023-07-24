@@ -1,0 +1,90 @@
+{
+    "__default__" :
+    {
+        "node" : 1,
+        "ntasks" : 1,
+        "n" : 1,
+	"cpusPerTask" : 1,
+	"memPerCpu" : 3000,
+	"time" : "24:00:00",
+	"exclude" : "node129"
+    },
+    "fasta2ABC_2pops" :
+    {
+	"cpusPerTask" : 8,
+	"time" : "24:00:00",
+	"memPerCpu" : 2000,
+	"exclude" : "node129"
+    },
+    "RNAseqFGT" :
+    {
+	"cpusPerTask" : 1,
+	"time" : "24:00:00",
+	"memPerCpu" : 10000,
+	"exclude" : "node129"
+    },
+    "modelComparison" :
+    {
+	"cpusPerTask" : 8,
+	"time" : "24:30:00",
+	"memPerCpu" : 4000,
+	"exclude" : "node129"
+    },
+    "estimation" :
+    {
+	"cpusPerTask" : 8,
+	"time" : "24:30:00",
+	"memPerCpu" : 3000,
+	"exclude" : "node129"
+    },
+    "estimation_best_model" :
+    {
+	"cpusPerTask" : 8,
+	"time" : "24:30:00",
+	"memPerCpu" : 3000,
+	"exclude" : "node129"
+    },
+    "estimation_best_model_2" :
+    {
+	"cpusPerTask" : 8,
+	"time" : "24:30:00",
+	"memPerCpu" : 3000,
+	"exclude" : "node129"
+    },
+    "estimation_best_model_3" :
+    {
+	"cpusPerTask" : 8,
+	"time" : "24:30:00",
+	"memPerCpu" : 3000,
+	"exclude" : "node129"
+    },
+    "estimation_best_model_4" :
+    {
+	"cpusPerTask" : 8,
+	"time" : "24:30:00",
+	"memPerCpu" : 3000,
+	"exclude" : "node129"
+    },
+    "estimation_best_model_5" :
+    {
+	"cpusPerTask" : 8,
+	"time" : "24:30:00",
+	"memPerCpu" : 3000,
+	"exclude" : "node129"
+    },
+    "locus_modelComp" :
+    {
+	"cpusPerTask" : 8,
+	"time" : "24:30:00",
+	"memPerCpu" : 3000,
+	"exclude" : "node129"
+    },
+    "PCA_SS" :
+    {
+	"cpusPerTask" : 1,
+	"time" : "24:00:00",
+	"memPerCpu" : 5000,
+	"exclude" : "node129"
+    }
+}
+
